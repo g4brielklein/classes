@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import PaginaInicial from './paginas/PaginaInicial'
+import MainPage from './pages/MainPage'
 
-import './estilos/global.css'
+import './styles/global.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <PaginaInicial />  
+    <MainPage />
 )
