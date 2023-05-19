@@ -1,11 +1,11 @@
 import './style.css'
 
-function Card({ nome, hora }) {
+function Card({ name, time }) {
 
     return (
         <div className="card">
-            <strong>{ nome }</strong>
-            <small>{ hora }</small>
+            <strong>{ name }</strong>
+            <small>{ time }</small>
         </div>
     )
 }
