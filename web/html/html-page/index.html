@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font Awesome icons import -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+        <!-- CSS import -->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        
+        <!-- Page div -->
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <h1>Personal Portfolio { Your name here }</h1>
+
+                <!-- Social links -->
+                <div class="social">
+
+                    <!-- Github link -->
+                    <a href="https://github.com/g4brielklein" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
+                    </a>
+
+                    <!-- LinkedIn link -->
+                    <a href="https://linkedin.com/in/g4brielklein" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl" style="color: #223d6d;"></i>
+                    </a>
+
+                </div>
+            </header>
+
+            <!-- Side menu -->
+            <aside class="left">
+                <!-- Image -->
+                <img 
+                    width="160px" 
+                    src="https://cdn-icons-png.flaticon.com/512/149/149071.png" 
+                    alt="Profile picture"
+                >
+
+                <!-- Unordered list -->
+                <ul>
+                    <li>
+                        <a href="#about" class="active">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </aside>
+
+            <!-- Main content -->
+            <main class="content">
+
+                <h2 id="about">About</h2>
+                <p>
+                    &nbsp;Here you talk a bit about yourself, education items
+                    
+                    <br>Hey there, my name's <strong> { Your name here } </strong>, I'm XX years old, and my skills are...
+
+                    <br><br>
+                    Here are some of the details of my academic journey
+
+                    <br><br>
+                    Here are some of my past experiences...
+
+                </p>
+
+                <h2 id="projects">Projects</h2>
+                <p>
+                    Here you can see some of the websites/webapps that i've built and deployed...
+
+                    <br><br>
+                    Portfolio project #1
+
+                    <br><br>
+                    Portfolio project #2
+                </p>
+
+                <!-- Table -->
+                <h2 id="skills">How can I help you?</h2>
+
+                <table>
+                    <!-- Table's first row -->
+                    <tr>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                        <th>JavaScript</th>
+                    </tr>
+                    <!-- Table's second row -->
+                    <tr>
+                        <td>
+                            <!-- HTML icon -->
+                            <i class="fa-brands fa-html5 fa-1xl" style="color: #ca7d12;"></i>
+                        </td>
+                        <td>
+                            <!-- CSS icon -->
+                            <i class="fa-brands fa-css3-alt fa-1xl" style="color: #1255ca;"></i>
+                        </td>
+                        <td>
+                            <!-- JS icon -->
+                            <i class="fa-brands fa-js fa-1xl" style="color: #d2c214;"></i>
+                        </td>
+                    </tr>
+                    <!-- Table's third row -->
+                    <tr>
+                        <td>Building your website</td>
+                        <td>Styling your website</td>
+                        <td>Implementing awesome features</td>
+                    </tr>
+                </table>
+
+                <!-- Formulário -->
+                <h2 id="contact">Contact form: </h2>
+                <form>
+
+                    <label>Email: </label>
+                    <br>
+                    <input type="text" name="email" placeholder="Type here your email">
+
+                    <br>
+
+                    <label>Phone: </label>
+                    <br>
+                    <input type="text" name="phone" placeholder="(99) 99999-9999">
+
+                    <br>
+
+                    <label>Message: </label>
+                    <br>
+                    <textarea 
+                        name="message" 
+                        cols="30" 
+                        rows="5"
+                        placeholder="Type here your message"
+                    ></textarea>
+
+                    <br>
+
+                    <input type="button" value="Send">
+
+                </form>
+
+            </main>
+
+            <footer class="footer">
+                Copyright &copy; { Your name here } | 2023
+            </footer>
+
+        </div>
+
+    </body>
+</html>
