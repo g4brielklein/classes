@@ -97,7 +97,7 @@ SELECT * FROM tbappointment;
 
 UPDATE tbappointment
 SET date = '2020-06-15',
-	price = price * 1.10
+  price = price * 1.10
 WHERE fkCodDoc = 2
 OR fkCodDoc = 4
 AND price > 159.99;
@@ -111,8 +111,8 @@ INNER JOIN tbpatient p ON a.fkCodPat = p.idPatient
 WHERE a.date <= '2020-06-01'
 AND p.gender = 'M';
 
-SELECT e.name
-	, COUNT(1) AS quantity
+SELECT e.name,
+  COUNT(1) AS quantity
 FROM tbappointment a
 INNER JOIN tbexam e ON a.fkCodExa = e.idExam
 GROUP BY 1;
@@ -125,7 +125,7 @@ INNER JOIN tbexam e ON a.fkCodExa = e.idExam
 GROUP BY 1, 2, 3;
 
 SELECT p.name, 
-	COUNT(idAppointment) as appointmentsQuantity,
+  COUNT(idAppointment) as appointmentsQuantity,
   SUM(price) as totalCost
 FROM tbappointment a
 INNER JOIN tbpatient p on a.fkCodPat = p.idPatient
