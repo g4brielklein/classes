@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Intro</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="dom">DOM</h2>
+    <p>Using <strong>DOM</strong> with JavaScript</p>
+
+    <p class="result">Result</p>
+
+    <div id="message">Click here</div>
+
+    <script>
+        // document.write(window.document.charset)
+        // document.write(window.location.host)
+        // document.write(window.location.pathname)
+
+        var body = window.document.body
+        body.style.background = 'green'
+
+        var paragraph1 = window.document.getElementsByTagName('p')[0]
+        // document.write(`Conteúdo do primeiro parágrafo: ${paragraph1.innerText}`)
+        paragraph1.style.color = 'blue'
+        console.log(paragraph1.innerText)
+
+        // alert(paragraph1.innerText)
+        // alert(paragraph1.innerHTML)
+
+        var dom = document.getElementById('dom')
+        console.log(dom.innerText)
+
+        var message = document.getElementById('message')
+        console.log(message.innerText)
+        message.style.background = 'purple'
+        message.innerText = 'Waiting...'
+        // window.document.getElementById('message').innerText = 'Teste...'
+
+        document.getElementsByClassName('result')[0].innerText = ':)'
+
+        // Query Selector
+        var query = document.querySelector('div#message')
+        // console.log(query.innerHTML)
+        query.style.background = 'blue'
+    </script>
+</body>
+</html>

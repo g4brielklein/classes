@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+        body {
+            background-color: rgb(64, 60, 60);
+            color: white;
+            font: normal 16pt Arial
+        }
+
+        input {
+            font: normal 16pt Arial;
+            width: 30%;
+        }
+
+        div#result {
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <input type="number" id="number1"> + 
+    <input type="number" id="number2">
+    <input type="button" value="Calculate" id="calculate"></button>
+
+    <div id="result">
+        Result = 
+    </div>
+
+    <script>
+        
+        var button = document.getElementById('calculate')
+        button.addEventListener('click', () => { 
+            var number1 = document.getElementById('number1')
+            var number2 = document.getElementById('number2')
+
+            var sum = Number(number1.value) + Number(number2.value)
+
+            var result = document.getElementById('result')
+            result.innerHTML = `Result = <strong>${sum}</strong>`
+        })
+
+    </script>
+</body>
+</html>

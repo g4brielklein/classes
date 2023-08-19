@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions intro</title>
+    <style>
+        body {
+            background-color: rgb(124, 123, 123);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Speed control system</h1>
+
+    Speed: <input type="number" id="speed"> Km/h
+
+    <input type="button" value="Check" onclick="check()">
+
+    <div id="result"></div>
+
+    <script>
+        function check() {
+            speedLimit = 80
+
+            var speedInput = document.getElementById("speed")
+            var speedConverted = Number(speed.value)
+
+            var result = document.getElementById('result')
+
+            result.innerHTML = `<p>Current speed: <strong>${speedConverted}<strong></p>`
+
+            if (speedConverted > speedLimit) {
+                result.innerHTML += 'Speed limit surpassed'
+            }
+        }
+    </script>
+</body>
+</html>

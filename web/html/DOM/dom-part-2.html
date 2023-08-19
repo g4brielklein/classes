@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part 2</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name = prompt("What's your name? ");
+        document.write(`Hey, <strong>${name}</strong>! Your name has ${name.length} letters<br>`);
+        document.write(`Your name in upper case is ${name.toUpperCase()}<br>`)
+        document.write(`Your name in lower case is ${name.toLowerCase()}<br>`)
+
+        var income = 8545.5
+        // console.log(income.toFixed(2).replace('.', ','))
+        // console.log(income.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))
+
+        document.write(income.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))
+    </script>
+</body>
+</html>
