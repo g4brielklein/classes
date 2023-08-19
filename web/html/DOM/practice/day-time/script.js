@@ -7,6 +7,7 @@ function activate() {
     let fullHour = minutes >= 10 ? `${hour}:${minutes}` : `${hour}:0${minutes}`
 
     let time = document.getElementById('time-container')
+    
     time.innerText = `Now is ${fullHour} hrs`
     
     let image = document.getElementById('image')
