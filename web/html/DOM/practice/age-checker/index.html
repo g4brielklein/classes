@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice: Age Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <h1>Age Checker</h1>
+            </div>
+        </header>
+        <section>
+            <div class="section-container">
+                <div class="inputs-container">
+                    <p>
+                        Birth Date: <input type="number" id="birth-date" autocomplete="off"></input>
+                    </p>
+
+                    <p>
+                        Gender: <input type="radio" name="gender" id="gender-m" value="m" checked>
+                        <label for="gender-m">Masculine</label>
+                    
+                        <input type="radio" name="gender" id="gender-f" value="f">
+                        <label for="gender-f">Feminine</label>
+                    </p>
+
+                    <p>
+                        <input type="button" id="submit" value="Submit" onclick="handleSubmit()">
+                    </p>
+                </div>
+
+                <div id="description">
+                    Fill the fields and click submit to start!
+                </div>
+
+                <div class="image-container" id="image-container"></div>
+            </div>
+        </section>
+        <footer>
+            <p>2023</p>
+        </footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
