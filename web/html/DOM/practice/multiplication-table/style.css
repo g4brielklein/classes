@@ -1,0 +1,38 @@
+body {
+  margin-top: 100px;
+  background-color: rgb(24, 71, 23);
+  font: normal 14pt Arial;
+  color: white;
+  text-align: center;
+}
+  
+section {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px;
+  width: 500px;
+  box-shadow: 3px 3px 10px rgb(73, 72, 72);
+}
+
+select {
+  padding: 10px;
+  border-radius: 10px;
+  width: 380px;
+  text-align: center;
+}
+
+.mutiplication-table-container input,
+.mutiplication-table-container select {
+  font-size: 16px;
+}
+
+.mutiplication-table-container #number {
+  width: 210px;
+}
+
+footer {
+  font-style: italic;
+  text-align: center;
+}
