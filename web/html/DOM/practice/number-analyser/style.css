@@ -1,0 +1,35 @@
+body {
+  margin-top: 100px;
+  background-color: rgb(162, 156, 43);
+  font: normal 14pt Arial;
+  color: white;
+  text-align: center;
+}
+  
+section {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px;
+  width: 500px;
+  box-shadow: 3px 3px 10px rgb(73, 72, 72);
+}
+
+.number-input {
+  padding: 10px 0;
+}
+
+.select {
+  padding: 10px 0;
+}
+
+.select select {
+  width: 250px;
+  text-align: center;
+}
+
+footer {
+  font-style: italic;
+  text-align: center;
+}
